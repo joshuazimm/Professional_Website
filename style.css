@@ -23,7 +23,7 @@ body {
     height: 100%;
     top: 0%;
     left: 10%;
-    padding-top: 7%;
+    padding-top: 10%;
     padding-left: 5%;
     color: #51513D;
     font-size: 8vw;
@@ -68,9 +68,41 @@ body {
     z-index: 1;
 }
 
+.background1 .rect5 {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    top: 30%;
+    left: 55%;
+    color: #000;
+}
+
+.background1 .rect5 b {
+    font-size: 6vw;
+    text-align: center;
+    color: #333;
+}
+
+.background1 .rect5 p {
+    font-size: 3vw;
+    text-align: left;
+    color: #333;
+}
+
+.background1 .rect5 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.background1 .rect5 a:visited {
+    color: #000;
+}
+
 .background1 .rect4 .menu-item {
-    margin-right: 20px;
+    margin-right: 60px;
     cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 .background1 .rect4 .menu-item:last-child {
@@ -79,16 +111,14 @@ body {
 
 .background1 .rect4 .menu-item a {
     color: #000;
-    text-decoration: none; /* Remove underlines from links */
+    text-decoration: none;
 }
 
 .background1 .rect4 .menu-item a:visited {
-    color: #000; /* Black color for visited links */
+    color: #000;
 }
 
 .contact-icons {
-    display: flex;
-    flex-direction: column;
     align-items: left;
 }
 
@@ -129,12 +159,11 @@ img {
     width: 100%;
     max-width: 40%; 
     max-height: auto;
-    overflow: hidden;
-    border-radius: 4vh;
     margin-top: 5%;
 }
 
 .background1 .rect1 .video-container video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
