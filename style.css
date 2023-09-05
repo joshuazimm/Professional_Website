@@ -77,6 +77,28 @@ body {
     color: #000;
 }
 
+.background1 .rect6 {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 7%;
+    left: 55%;
+}
+
+.background1 .rect6 #canvas-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.background1 .rect6 canvas {
+    width: 100%;
+    height: 100%;
+    image-rendering: smooth;
+}
+
 .background1 .rect5 b {
     font-size: 6vw;
     text-align: center;
