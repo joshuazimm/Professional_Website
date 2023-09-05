@@ -23,17 +23,21 @@ body {
     height: 100%;
     top: 0%;
     left: 10%;
-    padding-top: 10%;
+    padding-top: 7%;
     padding-left: 5%;
     color: #51513D;
     font-size: 8vw;
     background-color: #E3DC95;
 }
 
+.background1 .rect1 text {
+    margin-top: 15%;
+}
+
 .background1 .rect2 {
     position: absolute;
     width: 40%;
-    height: 150%;
+    height: 128%;
     top: 0%;
     left: 60%;
     background-color: #A6A867;
@@ -42,8 +46,8 @@ body {
 .background1 .rect3 {
     position: absolute;
     width: 100%;
-    height: 6%;
-    top: 94%;
+    height: 5%;
+    top: 73%;
     left: 0%;
     background-color: rgba(255, 255, 255, 1);
     color: #000;
@@ -55,7 +59,7 @@ body {
 .background1 .rect4 {
     position: fixed;
     width: 100%;
-    height: 6%;
+    height: 10%;
     top: 0%;
     left: 0%;
     background-color: rgba(255, 255, 255, 1);
@@ -145,7 +149,7 @@ body {
 }
 
 .contact-icon {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-right: 20px;
 }
@@ -173,7 +177,7 @@ body {
 img {
     width: auto;
     height: 80px;
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .background1 .rect1 .video-container {
