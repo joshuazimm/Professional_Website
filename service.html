@@ -1,40 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Joshua Zimmerman</title>
-        <link rel="stylesheet" type="text/css" href="style-projects.css"></link>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service Carousel</title>
+    <link rel="stylesheet" type="text/css" href="style-service.css"></link>
+</head>
+<body>
+    <div class="skill-rectangle">
+        <b>
+            My Experience With Serving
+        </b>
+        <p>
+            Serving the community has been a huge part of my life for as long as I can remember. In one of the 
+            pictures to the left, you'll see me in my choir uniform after singing at a Renaissance festival,
+            which was some of the most fun I've ever had serving. Providing other people with themed music
+            was especially satisfying above Christmas caroling for example because we
+            not only added to the experience for others, but performing was a challenging experience at the time 
+            due to the music being quite difficult at that age. Overcoming challenges to provide others with a
+            service relates to my mission as a computer scientist as well. In my other pictures, you can witness
+            me at my current job on an hour and 30-minute long call helping an elderly campus member manage their 
+            Google Drive, and at my lifeguarding job over the summer a year ago. The lifeguard job allowed me to
+            serve the community in the most direct capacity, as I was able to provide BLS to directly impact
+            an infant's compromised well-being and in general, was able to provide quality and safe summer fun for 
+            all families at the YMCA. In the same job, I was also able to teach swim lessons to children with 
+            disabilities. Helping those who could not learn to swim on their own get to a point where they could be
+            left alone in the water was one of the most enlightening and heartwarming experiences of my life
+            and to this day is my favorite community activity I've ever participated in. In the future, I would
+            like to focus more on using my computer science skills to help out my community. Either by making
+            a project in the healthcare field or making important services more readily available to needing 
+            customers, I would like to contribute to something that builds up the quality of life across the board
+            rather than break it down. I'm extremely excited for what's to come and I am looking forward to
+            applying my skills for the greater good in service of the community.
+        </p>
+    </div>
 
-    <body>
-        <div class="background2">
-            <div class="rect1">
-                <a href="https://github.com/joshuazimm" target="_blank">
-                    <img src="Media/github.png" alt="Link to my Github Profile">
-                </a>     
-                <a href="https://www.linkedin.com/in/joshua-zimmerman-231b16283/" target="_blank">
-                    <img src="Media/linkedin.png" alt="Link to my Linkedin Profile">
-                </a>
-                <a href="https://www.instagram.com/joshua.zimmerman2/" target="_blank">
-                    <img src="Media/ig.png" alt="Link to my Instagram Page">
-                </a>
-                <p class="contact-label">Contact Me:</p>
-                <div class="contact-icons">
-                    <div class="contact-icon">
-                        <a href="mailto:smalljoshua579@tamu.edu">
-                            <img src="Media/email.png" alt="Email" class="contact-image">
-                        </a>
-                        <span class="contact-text">smalljoshua579@tamu.edu</span>
-                    </div>
-                    <div class="contact-icon">
-                        <a href="tel:+1234567890">
-                            <img src="Media/phone.png" alt="Phone" class="contact-image">
-                        </a>
-                        <span class="contact-text">817-673-3451</span>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img class="carousel-image" src="IMG_0254.jpg" alt="Community Service Image 1">
+                <img class="carousel-image" src="IMG_6938.JPG" alt="Community Service Image 2">
+                <img class="carousel-image" src="IMG_3884.JPG" alt="Community Service Image 3">
             </div>
         </div>
+    </div>
 
-        
-    </body>
+    <script>
+        // JavaScript for the image carousel
+        const carouselSlide = document.querySelector(".carousel-slide");
+        const carouselImages = document.querySelectorAll(".carousel-image");
+
+        let counter = 0;
+        const imageWidth = carouselImages[0].clientWidth;
+
+        function slide() {
+            if (counter >= carouselImages.length - 1) {
+                counter = 0;
+            } else {
+                counter++;
+            }
+
+            carouselSlide.style.transition = "transform 0.5s ease-in-out";
+            carouselSlide.style.transform = `translateX(${-imageWidth * counter}px)`;
+        }
+
+        setInterval(slide, 5000);
+    </script>
+</body>
 </html>
