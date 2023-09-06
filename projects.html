@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joshua Zimmerman</title>
+        <link rel="stylesheet" type="text/css" href="style-projects.css"></link>
+    </head>
+
+    <body>
+        <div class="text portfolio-title">
+            Portfolio
+        </div>
+        <div class="background2">
+            <div class="rect1">
+                <a href="https://github.com/joshuazimm" target="_blank">
+                    <img src="Media/github.png" alt="Link to my Github Profile">
+                </a>     
+                <a href="https://www.linkedin.com/in/joshua-zimmerman-231b16283/" target="_blank">
+                    <img src="Media/linkedin.png" alt="Link to my Linkedin Profile">
+                </a>
+                <a href="https://www.instagram.com/joshua.zimmerman2/" target="_blank">
+                    <img src="Media/ig.png" alt="Link to my Instagram Page">
+                </a>
+                <p class="contact-label">Contact Me:</p>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="mailto:smalljoshua579@tamu.edu">
+                            <img src="Media/email.png" alt="Email" class="contact-image">
+                        </a>
+                        <span class="contact-text">smalljoshua579@tamu.edu</span>
+                    </div>
+                    <div class="contact-icon">
+                        <a href="tel:+1234567890">
+                            <img src="Media/phone.png" alt="Phone" class="contact-image">
+                        </a>
+                        <span class="contact-text">817-673-3451</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-rectangle">
+            <p>
+                Howdy and thanks for taking a look at my portfolio! I do a wide variety of projects most of which are motivated
+                by fun. I love to make visualizations for my projects, so users can interact with them rather than just typing
+                in a terminal. I tend to map out a lot of my projects using SDL2 and cpp then move them to more formal framework
+                like javascript as seen here. There is so much more that I wish I could fit on this page but I hope this gives a
+                good summary of my goals and skills as a programmer.
+            </p>
+        </div>
+        <div class="project-rectangle">
+            <img src="Media/callboard-blurred.png" alt="Image">
+            <p>
+                A react dashboard displayed in the call center 24/7 that uses API endpoints and web scraping to get live data. 
+                Some examples of what the call board can do is show how many calls are in the call queue, how many tickets 
+                are in each assigned queue, who is working what manager shift at the time, all current technicians and their 
+                current status, and so much more.
+            </p>
+        </div>
+        <div class="project-rectangle">
+            <img src="Media/Lorenz2.png" alt="Image">
+            <p>
+                This program, written in C++ using SDL2 to display graphics, gives a visual representation of a Lorenz 
+                attractor in real time. This program allows you to change the variable values of the shape being drawn to 
+                allow for the drawing of hundreds of combinations while giving you a fully customizable 3D view of what is 
+                being drawn.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2>Random Number Generator</h2>
+            <label for="lowerBound">Lower-Bound:</label>
+            <input type="number" id="lowerBound" placeholder="Enter lower bound" required>
+            <label for="upperBound">Upper-Bound:</label>
+            <input type="number" id="upperBound" placeholder="Enter upper bound" required>
+            <label for="numNumbers">Number of Numbers:</label>
+            <input type="number" id="numNumbers" placeholder="Enter number of numbers (max 10 million)" required>
+            <button id="generateButton">Generate Numbers</button>
+            <div id="results">
+            </div>
+        </div>
+
+        <div class="text-box">
+            <h2>Random Number Generator</h2>
+            <p>This is an interface that generates up to 10 million numbers using a Mersenne Twister random number 
+                generator i made from scratch. The RNG was seeded with your date and time when you entered this webpage
+                Currently I have it set to display the first 5 or less numbers generated, however it does generate all numbers
+                requested and appends them to an array. There are many applications of an rng, but an example of a usecase is
+                shown below.
+            </p>
+        </div>
+
+        <div class="text-box2">
+            <h2>Plinko (Click on it to play)</h2>
+            <p>This is a live interface for a gambling simulation made using the random number generator above. Although this doesn't 
+                have physics like a typical plinko game, this means each branch has an equal liklihood, therefore the bin return rates 
+                at the bottom can be calculated using a binomial distribution, resulting in a perfect 100% return. This means as n 
+                balls becomes large, you should never lose any money! This is just a fun way to show the functionality of the RNG.
+            </p>
+        </div>
+
+        <div id="moneyDisplay">Money: $10000.00</div>
+
+        <canvas id="gameCanvas"></canvas>
+        <script src="Javascript/rng.js" type="module"></script>
+        <script src="Javascript/logic.js" type="module"></script>
+    </body>
+</html>
+
+
+
+    
