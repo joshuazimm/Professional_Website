@@ -102,11 +102,15 @@ body {
 .project-rectangle img {
     float: left;
     margin-right: 20px;
-    max-width: 40%;
+    max-width: 300px;
 }
 
 .project-rectangle p {
     text-align: left;
+}
+.project-rectangle b {
+    text-align: left;
+    font-size: 20px;
 }
 
 .container {
